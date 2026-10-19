@@ -7,7 +7,7 @@
 
 > **Projektfokus:** Entwicklung einer sicheren, datenschutzkonformen Multi-Agenten-Architektur zur Vorqualifizierung und Beantwortung technischer Kunden- und B2B-Anfragen im SHK-Handwerk – inklusive juristischer und fachlicher Compliance-Prüfung.
 
-![Architektur: Soll & Ist](Pipeline-Soll-Ist-fuer-Winter.png)
+
 
 ## 📌 Ausgangslage & Business Value
 Fachbetriebe im Bereich SHK (Sanitär, Heizung, Klima) und Gebäudetechnik binden massive Ressourcen in der manuellen Sichtung unklarer Kundenanfragen, dem Abgleich von B2B-Produktdaten und der Beantwortung wiederkehrender technischer Fragen. Standard-Cloud-KIs scheiden aufgrund fehlenden Fachwissens, mangelnder Mandantentrennung und Datenschutzbedenken aus. 
