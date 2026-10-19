@@ -1,27 +1,27 @@
 # Assistent-SHK
-# 🛠️ Lokale KI-Pipeline für automatisierte SHK-Anfrageassistenz
+# 🛠️ Lokale KI-Pipeline für automatisierte SHK-Anfrageassistenz & Compliance
 
-![Status](https://img.shields.io/badge/Status-In_Development-orange)
+![Status](https://img.shields.io/badge/Status-Active_Development-brightgreen)
 ![Tech Stack](https://img.shields.io/badge/Tech-Python_|_Ollama_|_Qwen_|_Gemma-blue)
-![Focus](https://img.shields.io/badge/Domain-SHK_|_Gebäudetechnik-green)
+![Focus](https://img.shields.io/badge/Domain-SHK_|_Gebäudetechnik_|_Compliance-orange)
 
-> **Projektfokus:** Entwicklung einer sicheren, datenschutzkonformen Multi-Agenten-Architektur zur Vorqualifizierung und Beantwortung technischer Kunden- und B2B-Anfragen im SHK-Handwerk.
+> **Projektfokus:** Entwicklung einer sicheren, datenschutzkonformen Multi-Agenten-Architektur zur Vorqualifizierung und Beantwortung technischer Kunden- und B2B-Anfragen im SHK-Handwerk – inklusive juristischer und fachlicher Compliance-Prüfung.
 
 ![Architektur: Soll & Ist](Pipeline-Soll-Ist-fuer-Winter.png)
 
 ## 📌 Ausgangslage & Business Value
-Fachbetriebe im Bereich SHK (Sanitär, Heizung, Klima) und Stalltechnik binden massive Ressourcen in der manuellen Sichtung unklarer Kundenanfragen, dem Abgleich von B2B-Produktdaten und der Beantwortung wiederkehrender technischer Fragen. Standard-Cloud-KIs scheiden aufgrund fehlenden Fachwissens, mangelnder Mandantentrennung und Datenschutzbedenken aus. 
+Fachbetriebe im Bereich SHK (Sanitär, Heizung, Klima) und Gebäudetechnik binden massive Ressourcen in der manuellen Sichtung unklarer Kundenanfragen, dem Abgleich von B2B-Produktdaten und der Beantwortung wiederkehrender technischer Fragen. Standard-Cloud-KIs scheiden aufgrund fehlenden Fachwissens, mangelnder Mandantentrennung und Datenschutzbedenken aus. 
 
 Dieses Projekt löst das Problem durch eine **vollständig lokal gehostete Multi-Agenten-Pipeline**, die technisches Domänenwissen direkt in den Ausführungsworkflow integriert.
 
-## 🎯 Zielbild (SOLL-Zustand: SHK-Anfrageassistent)
-Ein prozesssicherer Assistent, der in drei Stufen arbeitet:
-1. **Anfrage vorbereiten:** Synthetische Einordnung der Anfragen und Erkennung fehlender technischer Angaben für gezielte Rückfragen.
-2. **Freigegebene FAQ:** Automatisierter Abgleich mit validierten Inhalten und Erstellung eines Antwortentwurfs inkl. Quellenbelegen.
-3. **Menschliche Freigabe (Human-in-the-Loop):** Kein automatischer Versand ohne menschliche Endabnahme durch den Fachbetrieb, um Haftungsrisiken auszuschließen.
+## 🚀 Mehr als nur Textgenerierung: Juristische & Fachliche Vorprüfung
+Der Assistent ist nicht nur ein einfaches E-Mail-Tool, sondern eine vollwertige Prüfungsinstanz:
+1. **Compliance & RAG:** Das System ist mit den neuesten Gesetzen, Vorschriften und tagesaktuellen Schulungsunterlagen gefüttert.
+2. **Risikominimierung:** Anfragen werden direkt gegen diese Vorgaben abgeglichen, um Haftungsrisiken für den Betrieb aktiv zu minimieren.
+3. **Menschliche Freigabe (Human-in-the-Loop):** Kein automatischer Versand ohne menschliche Endabnahme durch den Fachbetrieb.
 
 ## ⚙️ Systemarchitektur & Infrastruktur (IST-Stand)
-Um volle Datenhoheit zu gewährleisten, ist das System strikt lokal und netzwerkisoliert aufgebaut:
+Um volle Datenhoheit und Sicherheit zu gewährleisten, ist das System strikt lokal und netzwerkisoliert aufgebaut:
 * **Dezentrale Inferenz & Runner:** Trennung der Modellanfragen (Windows-PC via Ollama, z.B. `qwen3.5:4b`) vom Ausführungsserver (CachyOS-Server mit Python-Runner).
 * **Sichere Kommunikation:** Verbindung über einen SSH-Rücktunnel.
 * **Bubblewrap Sandbox:** Getrennte Probeläufe und Ausführung von Code finden in einer strikt isolierten Umgebung mit harten Ressourcenlimits statt.
@@ -40,7 +40,7 @@ Das System verlässt sich nicht auf einfache Textgenerierung, sondern evaluiert 
 
 ---
 
-### 👨‍💻 Über den Entwickler
-Ich vereine tiefe Branchenkenntnis (Domain Expertise als SHK-Experte & Techniker) mit modernem AI-Engineering, Systemadministration und Vibecoding. Mein Fokus liegt darauf, die Lücke zwischen theoretischen KI-Modellen und dem echten, physischen Handwerks- und B2B-Alltag zu schließen. 
+### 👩‍💻 Über die Entwicklerin
+Entwickelt von **Jenny Ubbenjans** – Expertin an der Schnittstelle von klassischem Handwerk (SHK & Stalltechnik) und modernem AI-Engineering / Vibecoding.
 
-📫 **Kontakt:** [Dein LinkedIn Link] | [Deine E-Mail Adresse]
+📫 **Kontakt:** jenny.ubbenjans@gmail.com | **GitHub:** [Jennysweet21](https://github.com/Jennysweet21)
