@@ -41,6 +41,6 @@ Das System verlässt sich nicht auf einfache Textgenerierung, sondern evaluiert 
 ---
 
 ### 👩‍💻 Über die Entwicklerin
-Entwickelt von **Jenny Ubbenjans** – Expertin an der Schnittstelle von klassischem Handwerk (SHK & Stalltechnik) und modernem AI-Engineering / Vibecoding.
+Entwickelt von **Jennysweet21** – Expertin an der Schnittstelle von klassischem Handwerk (SHK & Stalltechnik) und modernem AI-Engineering / Vibecoding.
 
-📫 **Kontakt:** jenny.ubbenjans@gmail.com | **GitHub:** [Jennysweet21](https://github.com/Jennysweet21)
+📫 **Kontakt:** j20857844@gmail.com | **GitHub:** [Jennysweet21](https://github.com/Jennysweet21)
